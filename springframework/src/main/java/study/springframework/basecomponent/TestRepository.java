@@ -1,6 +1,6 @@
 package study.springframework.basecomponent;
 
-public interface TestRepository {
+public interface TestRepository extends TestBean {
     void save();
     void delete();
     void update();

@@ -4,7 +4,7 @@ import study.springframework.basecomponent.TestBean;
 
 public class TestBeanImpl implements TestBean {
     @Override
-    public void print() {
-        System.out.println("TestBeanImpl.print()");
+    public void printMyName() {
+        System.out.println("InnerTestComponent");
     }
 }

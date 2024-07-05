@@ -1,14 +1,11 @@
 package study.springframework.Ioc.bean;
 
-import org.assertj.core.api.AbstractThrowableAssert;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import study.springframework.basecomponent.TestBean;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class BeanTest {
 
@@ -20,7 +17,7 @@ class BeanTest {
          */
         ApplicationContext ac = new AnnotationConfigApplicationContext(BeanConfig.class);
         TestBean testBean = (TestBean) ac.getBean("testBean");
-        testBean.print();
+        testBean.printMyName();
         Assertions.assertThat(testBean).isNotNull();
     }
 
@@ -32,7 +29,7 @@ class BeanTest {
          */
         ApplicationContext ac = new AnnotationConfigApplicationContext(BeanConfig.class);
         TestBean testBean = ac.getBean("testBean", TestBean.class);
-        testBean.print();
+        testBean.printMyName();
         Assertions.assertThat(testBean).isNotNull();
     }
 
@@ -53,7 +50,7 @@ class BeanTest {
          */
         ApplicationContext ac = new AnnotationConfigApplicationContext(BeanConfig.class);
         TestBean testBean = ac.getBean("secondBean", TestBean.class);
-        testBean.print();
+        testBean.printMyName();
         Assertions.assertThat(testBean).isNotNull();
     }
 }

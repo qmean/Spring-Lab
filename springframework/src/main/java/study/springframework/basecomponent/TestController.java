@@ -1,4 +1,4 @@
 package study.springframework.basecomponent;
 
-public interface TestController {
+public interface TestController extends TestBean {
 }

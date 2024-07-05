@@ -13,7 +13,7 @@ public class BeanConfig {
 
     @Bean(name = "testBean")
     public TestBean testBean2() {
-        return new TestBeanImpl("duplicated name : name = \"testBean\"");
+        return new TestBeanImpl("duplicated name : name = \"testBeanImpl\"");
     }
 
     @Bean(name = "secondBean")

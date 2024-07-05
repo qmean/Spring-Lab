@@ -5,8 +5,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import study.springframework.basecomponent.TestBean;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class SpringContainerTest {
 
     @Test
@@ -19,7 +17,7 @@ class SpringContainerTest {
          */
         ApplicationContext ac = new AnnotationConfigApplicationContext(SpringContainerConfig.class);
         TestBean testBean = ac.getBean("testBean", TestBean.class);
-        testBean.print();
+        testBean.printMyName();
     }
 
     @Test

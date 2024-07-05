@@ -7,7 +7,7 @@ public class TestBeanImpl implements TestBean {
     private String name;
 
     @Override
-    public void print() {
+    public void printMyName() {
         System.out.println("name : " + name);
     }
 

@@ -1,9 +1,10 @@
-package study.springframework.Ioc.autowired.config;
+package study.springframework.Ioc.autowired;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import study.springframework.Ioc.autowired.basic_test_beans.*;
+import study.springframework.Ioc.autowired.config.BasicAutowiredConfig;
 
 class BasicAutowiredTest {
 

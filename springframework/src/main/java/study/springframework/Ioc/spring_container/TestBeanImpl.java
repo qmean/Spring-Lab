@@ -1,10 +1,10 @@
 package study.springframework.Ioc.spring_container;
 
-import study.springframework.basecomponent.TestBean;
+import study.springframework.Ioc.base.TestBean;
 
 public class TestBeanImpl implements TestBean {
-    @Override
-    public void printMyName() {
-        System.out.println("InnerTestComponent");
-    }
+	@Override
+	public void printMyName() {
+		System.out.println("InnerTestComponent");
+	}
 }
